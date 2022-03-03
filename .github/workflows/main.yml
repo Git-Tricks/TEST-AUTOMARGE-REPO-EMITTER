@@ -1,0 +1,20 @@
+# FROM THIS TO https://github.com/bertz-tech/TESTREPO
+
+
+
+name: 🪐 CLONE COMPONENTS
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  components-deploy:
+    name: 🪐 CLONE-COMPONENTS
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 🔍 Get latest code
+        uses: actions/checkout@v2
+        with:
+          submodules: true
