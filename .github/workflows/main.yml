@@ -22,4 +22,5 @@ jobs:
           target-directory: 'transmitted'
           destination-github-username: 'bertz-tech'
           destination-repository-name: 'TEST-AUTOMARGE-REPO-RECEIVING'
+          commit-message: '...'
           target-branch: main
