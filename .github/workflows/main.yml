@@ -9,15 +9,13 @@ on:
     branches: [ main ]
 
 jobs:
-  components-deploy:
-    name: 🪐 CLONE-COMPONENTS
+  build:
     runs-on: ubuntu-latest
-        container: pandoc/latex
-
+    container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-           - name: Pushes to repository
-        uses: cpina/github-action-push-to-another-repository@main
+        name: 🗁 Push to...
+      - uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.transfer_token }}
         with:
