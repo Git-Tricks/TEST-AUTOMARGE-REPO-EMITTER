@@ -1,2 +1,1 @@
-# TESTCOPYACTIONS-01
-this is a stupid test
+this is a stupid test for clone repository via action
