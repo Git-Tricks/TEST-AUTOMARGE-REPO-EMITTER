@@ -12,9 +12,17 @@ jobs:
   components-deploy:
     name: 🪐 CLONE-COMPONENTS
     runs-on: ubuntu-latest
-    steps:
+        container: pandoc/latex
 
-      - name: 🔍 Get latest code
-        uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
+           - name: Pushes to repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          submodules: true
+          source-directory: 'output'
+          destination-github-username: 'bertz-tech'
+          destination-repository-name: 'TEST-AUTOMARGE-REPO-RECEIVING'
+          #user-email: carles3@pina.cat
+          target-branch: main
