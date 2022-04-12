@@ -1,8 +1,7 @@
 # FROM THIS TO https://github.com/bertz-tech/TESTREPO
+# more info: https://github.com/marketplace/actions/push-directory-to-another-repository
 
-
-
-name: 🪐 CLONE COMPONENTS
+name: 🚚 REPO TRANSMITTER
 
 on:
   push:
@@ -14,7 +13,7 @@ jobs:
     container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-        name: 🗁 Push to...
+        name: 🚚 Send to...
       - uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.transfer_token }}
