@@ -24,5 +24,4 @@ jobs:
           source-directory: 'output'
           destination-github-username: 'bertz-tech'
           destination-repository-name: 'TEST-AUTOMARGE-REPO-RECEIVING'
-          #user-email: carles3@pina.cat
           target-branch: main
