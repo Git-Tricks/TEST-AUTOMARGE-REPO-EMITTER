@@ -22,6 +22,6 @@ jobs:
           source-directory: 'output'
           target-directory: 'transmitted'
           destination-github-username: 'Git-Tricks'
-          destination-repository-name: 'AUTOMARGE-REPO-RECEIVING'
+          destination-repository-name: 'automarge-repo-reciver'
           commit-message: '...'
           target-branch: main
