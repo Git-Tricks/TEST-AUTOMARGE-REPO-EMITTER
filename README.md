@@ -1,3 +1,4 @@
-this is a stupid test for clone repository via action
-
-the repository target: https://github.com/bertz-tech/TEST-AUTOMARGE-REPO-RECEIVING
+### This is a model of repository cloning and injection via action
+---
+- more on file: https://github.com/Git-Tricks/automarge-repo-emitter/blob/main/.github/workflows/main.yml
+- the repository target: https://github.com/Git-Tricks/automarge-repo-reciver
