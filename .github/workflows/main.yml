@@ -1,5 +1,6 @@
-# FROM THIS TO https://github.com/bertz-tech/TESTREPO
+# FROM THIS REPO TO https://github.com/bertz-tech/TESTREPO
 # more info: https://github.com/marketplace/actions/push-directory-to-another-repository
+# set access token: https://cpina.github.io/push-to-another-repository-docs/setup.html#setup-using-personal-access-token
 
 name: 🚚 REPO TRANSMITTER
 
